@@ -27,10 +27,16 @@ Reset:
 The counter is asynchronously reset to zero when the reset signal is asserted.
 This counter module provides a basic configurable-width counter with options for up-count or down-count modes, preload capability, and a detect signal to indicate when the counter has reached its maximum value.
 
-Testcase 1: counter sanity check 
+Testcase 1: counter sanity check
+
 Testcase 2: count to max value and see if detect goes HIGH (there is intentional bug)
+
 Testcase 3: add code to detect bug and raise an error
+
 Testcase 4: generate random number between 0:MAX and then disable the counter when that random number is reached
+
 Testcase 5: resets the counter in the middle of counting
+
 Testcase 6: reset and disable the counter simultaneously
+
 Testcase 7: use init() task.sv file to intialize counter module and then count to random number to preload value 
