@@ -1,0 +1,83 @@
+Command: vcs +vcs+lic+wait +v2k -full64 -sverilog -R -l vcs_testcase4_disable.log \
+testbench.sv counter_fixed.v testcase4_disable.sv +ntb_random_seed_automatic
+                         Chronologic VCS (TM)
+       Version U-2023.03-SP2_Full64 -- Tue Sep  3 22:06:32 2024
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'testbench.sv'
+Parsing design file 'counter_fixed.v'
+Parsing design file 'testcase4_disable.sv'
+Top Level Modules:
+       testbench
+No TimeScale specified
+Starting vcs inline pass...
+
+2 modules and 0 UDP read.
+recompiling module testcase
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/apps/vcsmx/vcs/U-2023.03-SP2/linux64/lib -L/apps/vcsmx/vcs/U-2023.03-SP2/linux64/lib \
+-Wl,-rpath-link=./   objs/amcQw_d.o   _2095_archive_1.so _prev_archive_1.so   SIM_l.o \
+rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o        \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /apps/vcsmx/vcs/U-2023.03-SP2/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /apps/vcsmx/vcs/U-2023.03-SP2/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Command: /home/runner/./simv +vcs+lic+wait +v2k -a vcs_testcase4_disable.log +ntb_random_seed_automatic
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  Sep  3 22:06 2024
+NOTE: automatic random seed used: 2549359939
+Arbitrary value:           0
+t=  0: result =  0, detect=0
+t= 25: result =  1, detect=0
+t= 35: result =  2, detect=0
+t= 45: result =  3, detect=0
+t= 55: result =  4, detect=0
+t= 65: result =  5, detect=0
+t= 75: result =  6, detect=0
+t= 85: result =  7, detect=0
+t= 95: result =  8, detect=0
+t=105: result =  9, detect=0
+t=115: result = 10, detect=0
+t=125: result = 11, detect=0
+t=135: result = 12, detect=0
+t=145: result = 13, detect=0
+t=155: result = 14, detect=0
+t=165: result = 15, detect=1
+t=175: result = 15, detect=0
+t=175: result = 15, detect=0
+t=185: result = 15, detect=0
+t=195: result = 15, detect=0
+t=205: result = 15, detect=0
+t=215: result = 15, detect=0
+t=225: result = 15, detect=0
+t=235: result = 15, detect=0
+t=245: result = 15, detect=0
+t=255: result = 15, detect=0
+t=265: result = 15, detect=0
+$finish called from file "testcase4_disable.sv", line 48.
+Test Passed: No errors detected during simulation.
+$finish at simulation time                  265
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 265
+CPU Time:      0.340 seconds;       Data structure size:   0.0Mb
+Tue Sep  3 22:06:34 2024
+CPU time: .386 seconds to compile + .469 seconds to elab + .246 seconds to link + .381 seconds in simulation

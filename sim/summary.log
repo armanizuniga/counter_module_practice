@@ -1,0 +1,21 @@
+Regression Test Summary
+----------------------
+
+Regression Summary:
+Total test cases run: 7
+Test cases passed: 4
+Test cases failed: 0
+Test cases without status: 3
+
+Passing Test Cases:
+  testcase3_bug.sv (Seed: 303079043)
+  testcase4_disable.sv (Seed: 2549359939)
+  testcase5_reset.sv (Seed: 2110278915)
+  testcase7_preload.sv (Seed: 4083771640)
+
+Failing Test Cases:
+
+Test Cases without Status:
+  testcase.sv (Seed: 2876694241)
+  testcase2.sv (Seed: 345725898)
+  testcase6_reset_disable.sv (Seed: 3400373699)
